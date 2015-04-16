@@ -2,19 +2,20 @@ Install Rails with Docker
 =========================
 
 ### Install
-`$> docker pull rails:4.2.1`
+`$> docker pull rails:4.2.1`  
 `$> docker build -t rails_docker .`
 
 ### Alias command
 
-$> alias rails_docker='docker run -it -v "$PWD":/usr/src/app rails_docker'
-$> alias rails_docker_bash='docker run -it -p "3000:3000" -v "$PWD":/usr/src/app --entrypoint bash rails_docker'
+$> alias rails_docker='docker run -it -v "$PWD":/usr/src/app rails_docker'  
+$> alias rails_docker_bash='docker run -it -p "3000:3000" -v "$PWD":/usr/src/app --entrypoint bash rails_docker'  
 
 ### Execution
 
-$> rails_docker new app
-$> cd app && touch run.sh
-$> vim run.sh
+$> rails_docker new app   
+$> cd app && touch run.sh   
+$> vim run.sh   
+
 ```
 #!/bin/bash
 
